@@ -1,137 +1,93 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ramzes-stahl - Montaż i Mechanika Przemysłowa</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #0d3b66;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-        }
-        nav {
-            background-color: #144d8c;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .lang-switcher {
-            margin-top: 10px;
-        }
-        .lang-switcher button {
-            margin: 0 5px;
-            padding: 5px 10px;
-            border: none;
-            background-color: #0d3b66;
-            color: white;
-            cursor: pointer;
-        }
-        .lang-switcher button:hover {
-            background-color: #092744;
-        }
-        main {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #0d3b66;
-            border-bottom: 2px solid #0d3b66;
-            padding-bottom: 8px;
-        }
-        footer {
-            background-color: #0d3b66;
-            color: white;
-            text-align: center;
-            padding: 15px 10px;
-            font-size: 0.9em;
-        }
-        .contact-info {
-            line-height: 1.6;
-        }
-        .logo-svg {
-            width: 50px;
-            height: 50px;
-            fill: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramzes-Stahl</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #1e2a34;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 60px 40px;
+      background-color: #ffffff;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 36px;
+      color: #1e2a34;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .contact {
+      background-color: #e5e5e5;
+      padding: 40px;
+      text-align: center;
+    }
+    .contact h3 {
+      font-size: 24px;
+      color: #1e2a34;
+    }
+    .contact p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>
-            <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
-                <rect x="10" y="20" width="44" height="24" rx="4" ry="4" />
-                <line x1="10" y1="30" x2="54" y2="30" stroke="white" stroke-width="2" />
-                <line x1="10" y1="38" x2="54" y2="38" stroke="white" stroke-width="2" />
-                <circle cx="32" cy="32" r="6" stroke="white" stroke-width="2" fill="none"/>
-            </svg>
-            ramzes-stahl
-        </h1>
-        <p id="header-desc">Montaż i Mechanika Przemysłowa - Praca na terenie UE, szczególnie Niemcy</p>
-
-        <div class="lang-switcher">
-            <button onclick="changeLang('pl')">PL</button>
-            <button onclick="changeLang('en')">EN</button>
-            <button onclick="changeLang('de')">DE</button>
-        </div>
-    </header>
-
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Ramzes-Stahl Logo">
+      <h1>Ramzes-Stahl</h1>
+    </div>
     <nav>
-        <a href="#about" id="nav-about">O Nas</a>
-        <a href="#services" id="nav-services">Usługi</a>
-        <a href="#career" id="nav-career">Kariera</a>
-        <a href="#contact" id="nav-contact">Kontakt</a>
+      <a href="#">Start</a>
+      <a href="#">O nas</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
+  </header>
 
-    <main>
-        <section id="about">
-            <h2 id="about-title">O Nas</h2>
-            <p id="about-text">
-                Firma <strong>ramzes-stahl</strong> specjalizuje się w montażu i mechanice przemysłowej. 
-                Działamy na terenie całej Unii Europejskiej, ze szczególnym uwzględnieniem rynku niemieckiego.
-                Nasze doświadczenie oraz profesjonalizm gwarantują wysoką jakość świadczonych usług.
-            </p>
-        </section>
+  <section class="hero">
+    <h2>Montaż i mechanika przemysłowa</h2>
+    <p>Zajmujemy się montażem i mechaniką przemysłową na terenie Unii Europejskiej.</p>
+  </section>
 
-        <section id="services">
-            <h2 id="services-title">Nasze Usługi</h2>
-            <ul id="services-list">
-                <li>Montaż konstrukcji stalowych</li>
-                <li>Mechanika przemysłowa</li>
-                <li>Serwis i konserwacja maszyn</li>
-                <li>Realizacja projektów na terenie UE, głównie Niemcy</li>
-            </ul>
-        </section>
-
-        <section id="career">
-            <h2 id="career-title">Kariera</h2>
-            <p id="career-text">
-                Posz
+  <section class="contact" id="kontakt">
+    <h3>Kontakt</h3>
+    <p>ramzes-stahl@gmail.com</p>
+    <p>+48 790 222 671</p>
+  </section>
+</body>
+</html>
