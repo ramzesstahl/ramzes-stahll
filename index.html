@@ -2,113 +2,103 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ramzes Stahl - Montaż Przemysłowy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ramzes Stahl - Montaż i Mechanika Przemysłowa</title>
   <style>
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e8f0f2;
       margin: 0;
-      font-family: 'Roboto Condensed', sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
+      padding: 0;
+      color: #2c3e50;
     }
-
     header {
-      background-color: #2b2b2b;
-      color: #ffa500;
-      padding: 60px 20px;
+      background-color: #1a3d3d;
+      color: #f0f3f4;
+      padding: 50px 20px;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(26,61,61,0.4);
     }
-
     header h1 {
-      font-size: 3em;
       margin: 0;
+      font-size: 3rem;
+      letter-spacing: 3px;
     }
-
     nav {
-      background-color: #1a1a1a;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 12px 0;
+      background-color: #2f5757;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: inset 0 -3px 8px rgba(0,0,0,0.15);
     }
-
     nav a {
-      color: #ffa500;
+      color: #f0f3f4;
+      margin: 0 18px;
       text-decoration: none;
-      margin: 10px 15px;
-      font-weight: bold;
-      transition: color 0.3s;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
     }
-
     nav a:hover {
-      color: #ffffff;
+      color: #f39c12;
     }
-
     section {
-      padding: 60px 20px;
+      padding: 50px 20px;
       max-width: 1100px;
       margin: auto;
+      background: white;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(44, 62, 80, 0.1);
     }
-
-    h2 {
-      color: #ffa500;
-      font-size: 1.8em;
-      margin-bottom: 20px;
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+      color: #1a3d3d;
+      border-bottom: 3px solid #f39c12;
+      display: inline-block;
+      padding-bottom: 5px;
     }
-
-    p {
-      font-size: 1.1em;
+    section p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
     }
-
     .images {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
       margin-top: 30px;
     }
-
     .images img {
       width: 100%;
       height: auto;
-      border-radius: 6px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-      transition: transform 0.3s;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(26, 61, 61, 0.15);
+      transition: transform 0.3s ease;
     }
-
     .images img:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(26, 61, 61, 0.3);
     }
-
     footer {
-      background-color: #1a1a1a;
-      color: #999;
+      background-color: #1a3d3d;
+      color: #f0f3f4;
       text-align: center;
-      padding: 30px 20px;
-      font-size: 0.95em;
+      padding: 25px 20px;
+      font-size: 1rem;
+      letter-spacing: 1.5px;
     }
-
     a {
-      color: #ffa500;
+      color: #f39c12;
       text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Ramzes Stahl</h1>
-    <p>Montaż i mechanika przemysłowa – Europa, Niemcy</p>
+    <p>Montaż i mechanika przemysłowa - Europa, Niemcy</p>
   </header>
 
   <nav>
@@ -116,18 +106,15 @@
     <a href="#projects">Realizacje</a>
     <a href="#career">Kariera</a>
     <a href="#contact">Kontakt</a>
-    <a href="#de">DE</a>
-    <a href="#en">EN</a>
+    <a href="#de">Deutsch</a>
+    <a href="#en">English</a>
   </nav>
 
   <section id="about">
     <h2>O nas</h2>
-    <p>Jesteśmy zespołem specjalistów zajmujących się montażem przemysłowym, konstrukcjami stalowymi i instalacjami produkcyjnymi. Nasze doświadczenie obejmuje duże koncerny przemysłowe w całej UE, ze szczególnym uwzględnieniem Niemiec.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Realizacje</h2>
-    <div class="images">
-      <img src="https://images.unsplash.com/photo-1605300587070-b4a9cb821b8a?auto=format&fit=crop&w=800&q=80" alt="Przemysłowy montaż konstrukcji">
-      <img src="https://images.unsplash.com/photo-1581092918360-52f7e8b00f8f?auto=format&fit=crop&w=800&q=80" alt="Zespół montujący maszyny">
-      <img src="
+    <p>
+      Specjalizujemy się w kompleksowym montażu konstrukcji stalowych, linii produkcyjnych oraz instalacji przemysłowych. 
+      Nasz zespół posiada wieloletnie doświadczenie w realizacji projektów dla czołowych koncernów w całej Unii Europejskiej, 
+      ze szczególnym uwzględnieniem Niemiec.
+    </p>
+  </s
