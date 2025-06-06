@@ -3,81 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ramzes Stahl - Montaż i Mechanika Przemysłowa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Ramzes Stahl - Montaż Przemysłowy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #111;
-      color: #f1f1f1;
-      line-height: 1.6;
+      font-family: 'Roboto Condensed', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
     }
 
     header {
-      background: linear-gradient(to right, #1f4037, #99f2c8);
-      color: #fff;
+      background-color: #2b2b2b;
+      color: #ffa500;
       padding: 60px 20px;
       text-align: center;
     }
 
     header h1 {
-      margin: 0;
       font-size: 3em;
+      margin: 0;
     }
 
     nav {
       background-color: #1a1a1a;
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      padding: 10px 0;
+      justify-content: center;
+      padding: 12px 0;
     }
 
     nav a {
-      color: #99f2c8;
-      margin: 0 15px;
+      color: #ffa500;
       text-decoration: none;
+      margin: 10px 15px;
       font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: background 0.3s;
+      transition: color 0.3s;
     }
 
     nav a:hover {
-      background: #2a2a2a;
+      color: #ffffff;
     }
 
     section {
       padding: 60px 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
     }
 
-    section:nth-child(even) {
-      background-color: #1a1a1a;
+    h2 {
+      color: #ffa500;
+      font-size: 1.8em;
+      margin-bottom: 20px;
     }
 
-    h2 {
-      color: #99f2c8;
-      margin-top: 0;
+    p {
+      font-size: 1.1em;
     }
 
     .images {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
-      margin-top: 20px;
+      margin-top: 30px;
     }
 
     .images img {
       width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
       transition: transform 0.3s;
     }
 
@@ -86,15 +86,16 @@
     }
 
     footer {
-      background-color: #111;
-      color: #aaa;
+      background-color: #1a1a1a;
+      color: #999;
       text-align: center;
       padding: 30px 20px;
-      font-size: 0.9em;
+      font-size: 0.95em;
     }
 
     a {
-      color: #99f2c8;
+      color: #ffa500;
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
@@ -107,7 +108,7 @@
 <body>
   <header>
     <h1>Ramzes Stahl</h1>
-    <p>Montaż i mechanika przemysłowa - Europa, Niemcy</p>
+    <p>Montaż i mechanika przemysłowa – Europa, Niemcy</p>
   </header>
 
   <nav>
@@ -115,24 +116,18 @@
     <a href="#projects">Realizacje</a>
     <a href="#career">Kariera</a>
     <a href="#contact">Kontakt</a>
-    <a href="#de">Deutsch</a>
-    <a href="#en">English</a>
+    <a href="#de">DE</a>
+    <a href="#en">EN</a>
   </nav>
 
   <section id="about">
     <h2>O nas</h2>
-    <p>Specjalizujemy się w montażu konstrukcji stalowych oraz linii produkcyjnych w fabrykach przemysłowych takich jak BMW, Mercedes czy Rauch. Nasz doświadczony zespół działa na terenie całej Unii Europejskiej, ze szczególnym uwzględnieniem Niemiec.</p>
+    <p>Jesteśmy zespołem specjalistów zajmujących się montażem przemysłowym, konstrukcjami stalowymi i instalacjami produkcyjnymi. Nasze doświadczenie obejmuje duże koncerny przemysłowe w całej UE, ze szczególnym uwzględnieniem Niemiec.</p>
   </section>
 
   <section id="projects">
-    <h2>Nasze realizacje</h2>
+    <h2>Realizacje</h2>
     <div class="images">
-      <img src="https://images.unsplash.com/photo-1581093588401-94f6c1a0974b" alt="Montaż taśm w fabryce">
-      <img src="https://images.unsplash.com/photo-1610901301622-6be0b6e2bd61" alt="Konstrukcja stalowa">
-      <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2" alt="Linia produkcyjna">
-    </div>
-  </section>
-
-  <section id="career">
-    <h2>Kariera</h2>
-    <p>Szukasz pracy w branży przemysłowej? Dołącz do naszego zespołu! Oferujemy atrakcyjne warunki zatrudnienia, zakwaterowanie, oraz pracę na dużych projektach międzynarodowych. S
+      <img src="https://images.unsplash.com/photo-1605300587070-b4a9cb821b8a?auto=format&fit=crop&w=800&q=80" alt="Przemysłowy montaż konstrukcji">
+      <img src="https://images.unsplash.com/photo-1581092918360-52f7e8b00f8f?auto=format&fit=crop&w=800&q=80" alt="Zespół montujący maszyny">
+      <img src="
