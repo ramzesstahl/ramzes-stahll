@@ -3,23 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ramzes Stahl - Konstrukcje Stalowe</title>
+  <title>Ramzes Stahl - Stahl Bau</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #f4f4f4;
+      background-color: #e9ecef;
     }
     header {
-      background-color: #2c3e50;
+      background: linear-gradient(to right, #1f2937, #3b4252);
       color: #fff;
-      padding: 1em 0;
+      padding: 2em 0;
       text-align: center;
     }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+    header span {
+      font-size: 1.2em;
+      font-weight: 400;
+      opacity: 0.8;
+    }
     nav {
-      background-color: #34495e;
+      background-color: #2e3a59;
       text-align: center;
       padding: 0.5em;
     }
@@ -40,12 +50,18 @@
       text-decoration: underline;
     }
     section {
-      padding: 20px;
+      padding: 30px;
       max-width: 1000px;
       margin: auto;
-      background-color: #fff;
+      background-color: #ffffff;
       margin-top: 20px;
-      border-radius: 8px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .gallery img {
       width: 100%;
@@ -55,8 +71,8 @@
     }
     footer {
       text-align: center;
-      padding: 1em;
-      background-color: #2c3e50;
+      padding: 1.5em;
+      background-color: #1f2937;
       color: #fff;
       margin-top: 20px;
     }
@@ -80,13 +96,15 @@
 
 <header>
   <h1>Ramzes Stahl</h1>
-  <p class="lang-pl">Specjalizujemy się w konstrukcjach stalowych</p>
-  <p class="lang-de" style="display:none;">Spezialisiert auf Stahlkonstruktionen</p>
+  <span>Stahl Bau</span>
+  <p class="lang-pl">Nowoczesne rozwiązania stalowe dla przemysłu i budownictwa</p>
+  <p class="lang-de" style="display:none;">Moderne Stahlbau-Lösungen für Industrie und Bauwesen</p>
 </header>
 
 <nav>
   <a href="#o-nas">O nas / Über uns</a>
   <a href="#uslugi">Usługi / Dienstleistungen</a>
+  <a href="#kariera">Kariera / Karriere</a>
   <a href="#galeria">Galeria / Galerie</a>
   <a href="#kontakt">Kontakt</a>
 </nav>
@@ -94,11 +112,11 @@
 <section id="o-nas">
   <div class="lang-pl">
     <h2>O nas</h2>
-    <p>Ramzes Stahl to firma z wieloletnim doświadczeniem w projektowaniu i montażu konstrukcji stalowych. Działamy na terenie Polski i Niemiec, oferując kompleksowe usługi dla przemysłu i budownictwa.</p>
+    <p>Ramzes Stahl to dynamicznie rozwijająca się firma specjalizująca się w projektowaniu i budowie konstrukcji stalowych. Naszym celem jest dostarczanie niezawodnych i estetycznych rozwiązań dla przemysłu, logistyki oraz budownictwa komercyjnego. Wyróżnia nas jakość, precyzja i terminowość realizacji.</p>
   </div>
   <div class="lang-de" style="display:none;">
     <h2>Über uns</h2>
-    <p>Ramzes Stahl ist ein Unternehmen mit langjähriger Erfahrung in der Planung und Montage von Stahlkonstruktionen. Wir sind in Polen und Deutschland tätig und bieten umfassende Dienstleistungen für Industrie und Bauwesen.</p>
+    <p>Ramzes Stahl ist ein dynamisch wachsendes Unternehmen, das sich auf die Planung und den Bau von Stahlkonstruktionen spezialisiert hat. Unser Ziel ist es, zuverlässige und ästhetische Lösungen für Industrie, Logistik und Gewerbebau zu liefern. Wir zeichnen uns durch Qualität, Präzision und Termintreue aus.</p>
   </div>
 </section>
 
@@ -106,18 +124,29 @@
   <div class="lang-pl">
     <h2>Nasze usługi</h2>
     <ul>
-      <li>Projektowanie konstrukcji stalowych</li>
-      <li>Produkcja i montaż hal stalowych</li>
-      <li>Modernizacja obiektów przemysłowych</li>
+      <li>Projektowanie i doradztwo techniczne</li>
+      <li>Produkcja oraz montaż konstrukcji stalowych</li>
+      <li>Generalne wykonawstwo hal przemysłowych</li>
     </ul>
   </div>
   <div class="lang-de" style="display:none;">
     <h2>Unsere Dienstleistungen</h2>
     <ul>
-      <li>Entwurf von Stahlkonstruktionen</li>
-      <li>Herstellung und Montage von Stahlhallen</li>
-      <li>Modernisierung von Industrieanlagen</li>
+      <li>Technische Planung und Beratung</li>
+      <li>Fertigung und Montage von Stahlkonstruktionen</li>
+      <li>Generalunternehmer für Industriehallen</li>
     </ul>
+  </div>
+</section>
+
+<section id="kariera">
+  <div class="lang-pl">
+    <h2>Kariera</h2>
+    <p>Szukasz pracy w stabilnej i nowoczesnej firmie? Dołącz do zespołu Ramzes Stahl! Oferujemy atrakcyjne warunki, możliwość rozwoju i pracę przy ciekawych projektach.</p>
+  </div>
+  <div class="lang-de" style="display:none;">
+    <h2>Karriere</h2>
+    <p>Du suchst einen Job in einem stabilen und modernen Unternehmen? Werde Teil des Ramzes Stahl Teams! Wir bieten attraktive Bedingungen, Entwicklungsmöglichkeiten und spannende Projekte.</p>
   </div>
 </section>
 
