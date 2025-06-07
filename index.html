@@ -2,92 +2,151 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ramzes-Stahl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ramzes Stahl - Konstrukcje Stalowe</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
       background-color: #f4f4f4;
-      color: #333;
     }
     header {
-      background-color: #1e2a34;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 1em 0;
+      text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 24px;
+    nav {
+      background-color: #34495e;
+      text-align: center;
+      padding: 0.5em;
     }
     nav a {
-      color: white;
-      margin-left: 20px;
+      color: #fff;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-    .hero {
-      padding: 60px 40px;
-      background-color: #ffffff;
+    .lang-switcher {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+    .lang-switcher a {
+      color: #fff;
+      margin: 0 5px;
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fff;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+    footer {
       text-align: center;
-    }
-    .hero h2 {
-      font-size: 36px;
-      color: #1e2a34;
-    }
-    .hero p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-    .contact {
-      background-color: #e5e5e5;
-      padding: 40px;
-      text-align: center;
-    }
-    .contact h3 {
-      font-size: 24px;
-      color: #1e2a34;
-    }
-    .contact p {
-      font-size: 18px;
-      margin: 5px 0;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-    .logo img {
-      width: 40px;
-      height: 40px;
-      margin-right: 10px;
+      padding: 1em;
+      background-color: #2c3e50;
+      color: #fff;
+      margin-top: 20px;
     }
   </style>
+  <script>
+    function switchLanguage(lang) {
+      const pl = document.querySelectorAll('.lang-pl');
+      const de = document.querySelectorAll('.lang-de');
+      pl.forEach(el => el.style.display = lang === 'pl' ? 'block' : 'none');
+      de.forEach(el => el.style.display = lang === 'de' ? 'block' : 'none');
+    }
+    window.onload = () => switchLanguage('pl');
+  </script>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="Ramzes-Stahl Logo">
-      <h1>Ramzes-Stahl</h1>
-    </div>
-    <nav>
-      <a href="#">Start</a>
-      <a href="#">O nas</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Montaż i mechanika przemysłowa</h2>
-    <p>Zajmujemy się montażem i mechaniką przemysłową na terenie Unii Europejskiej.</p>
-  </section>
+<div class="lang-switcher">
+  <a href="#" onclick="switchLanguage('pl')">PL</a> |
+  <a href="#" onclick="switchLanguage('de')">DE</a>
+</div>
 
-  <section class="contact" id="kontakt">
-    <h3>Kontakt</h3>
-    <p>ramzes-stahl@gmail.com</p>
-    <p>+48 790 222 671</p>
-  </section>
+<header>
+  <h1>Ramzes Stahl</h1>
+  <p class="lang-pl">Specjalizujemy się w konstrukcjach stalowych</p>
+  <p class="lang-de" style="display:none;">Spezialisiert auf Stahlkonstruktionen</p>
+</header>
+
+<nav>
+  <a href="#o-nas">O nas / Über uns</a>
+  <a href="#uslugi">Usługi / Dienstleistungen</a>
+  <a href="#galeria">Galeria / Galerie</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="o-nas">
+  <div class="lang-pl">
+    <h2>O nas</h2>
+    <p>Ramzes Stahl to firma z wieloletnim doświadczeniem w projektowaniu i montażu konstrukcji stalowych. Działamy na terenie Polski i Niemiec, oferując kompleksowe usługi dla przemysłu i budownictwa.</p>
+  </div>
+  <div class="lang-de" style="display:none;">
+    <h2>Über uns</h2>
+    <p>Ramzes Stahl ist ein Unternehmen mit langjähriger Erfahrung in der Planung und Montage von Stahlkonstruktionen. Wir sind in Polen und Deutschland tätig und bieten umfassende Dienstleistungen für Industrie und Bauwesen.</p>
+  </div>
+</section>
+
+<section id="uslugi">
+  <div class="lang-pl">
+    <h2>Nasze usługi</h2>
+    <ul>
+      <li>Projektowanie konstrukcji stalowych</li>
+      <li>Produkcja i montaż hal stalowych</li>
+      <li>Modernizacja obiektów przemysłowych</li>
+    </ul>
+  </div>
+  <div class="lang-de" style="display:none;">
+    <h2>Unsere Dienstleistungen</h2>
+    <ul>
+      <li>Entwurf von Stahlkonstruktionen</li>
+      <li>Herstellung und Montage von Stahlhallen</li>
+      <li>Modernisierung von Industrieanlagen</li>
+    </ul>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="lang-pl">
+    <h2>Galeria</h2>
+    <p>Przykładowe realizacje:</p>
+  </div>
+  <div class="lang-de" style="display:none;">
+    <h2>Galerie</h2>
+    <p>Beispielprojekte:</p>
+  </div>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/300x200?text=Konstrukcja+1" alt="Projekt 1">
+    <img src="https://via.placeholder.com/300x200?text=Konstrukcja+2" alt="Projekt 2">
+    <img src="https://via.placeholder.com/300x200?text=Konstrukcja+3" alt="Projekt 3">
+  </div>
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <p>Email: <a href="mailto:ramzes-stahl@gmail.com">ramzes-stahl@gmail.com</a></p>
+  <p>Telefon: +48 123 456 789</p>
+  <p>Adres: ul. Przemysłowa 12, 00-000 Miasto</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Ramzes Stahl. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
 </body>
 </html>
