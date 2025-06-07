@@ -6,50 +6,50 @@
   <title>Ramzes Stahl - Stahl Bau</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #f8f9fa;
+      background-color: #f4f6f8;
     }
     header {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      background: linear-gradient(to right, #1f2937, #3b4252);
       color: #fff;
-      padding: 2em 1em;
+      padding: 2em 0;
       text-align: center;
       position: relative;
     }
-    .logo {
+    header img.logo {
+      width: 80px;
       position: absolute;
       top: 10px;
-      left: 10px;
-    }
-    .logo img {
-      width: 80px;
-      height: auto;
-      border-radius: 8px;
+      left: 20px;
     }
     header h1 {
-      font-size: 2.8em;
-      margin: 0.3em 0 0.1em;
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
     }
     header span {
-      font-size: 1.4em;
+      font-size: 1.2em;
       font-weight: 400;
       opacity: 0.9;
     }
     nav {
-      background-color: #1c2a3a;
+      background-color: #2e3a59;
       text-align: center;
-      padding: 0.7em 0;
+      padding: 1em;
     }
     nav a {
       color: #fff;
-      margin: 0 20px;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s ease;
+      display: inline-block;
+      transition: color 0.3s;
     }
     nav a:hover {
       color: #00bcd4;
@@ -67,46 +67,38 @@
     section {
       padding: 30px;
       max-width: 1000px;
-      margin: 30px auto;
+      margin: 20px auto;
       background-color: #ffffff;
       border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      animation: fadeIn 1s ease-in;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 10px;
     }
     .gallery img {
       width: 100%;
       max-width: 300px;
-      margin: 10px;
       border-radius: 8px;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    form button {
-      background-color: #2c5364;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    form button:hover {
-      background-color: #1c2a3a;
     }
     footer {
       text-align: center;
-      padding: 1.5em;
+      padding: 2em 1em;
       background-color: #1f2937;
       color: #fff;
-      margin-top: 40px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.8em; }
+      nav a { display: block; margin: 10px 0; }
+      .lang-switcher { top: 5px; right: 10px; }
+      header img.logo { width: 60px; top: 5px; left: 10px; }
     }
   </style>
   <script>
@@ -121,19 +113,17 @@
 </head>
 <body>
 
-<div class="logo">
-  <img src="https://via.placeholder.com/80x80?text=Logo" alt="Logo">
-</div>
 <div class="lang-switcher">
   <a href="#" onclick="switchLanguage('pl')">PL</a> |
   <a href="#" onclick="switchLanguage('de')">DE</a>
 </div>
 
 <header>
+  <img src="https://via.placeholder.com/80x80?text=Logo" alt="Logo" class="logo">
   <h1>Ramzes Stahl</h1>
   <span>Stahl Bau</span>
-  <p class="lang-pl">Nowoczesne rozwiązania stalowe dla przemysłu i budownictwa</p>
-  <p class="lang-de" style="display:none;">Moderne Stahlbau-Lösungen für Industrie und Bauwesen</p>
+  <p class="lang-pl">Lider nowoczesnych rozwiązań stalowych dla przemysłu, logistyki i budownictwa</p>
+  <p class="lang-de" style="display:none;">Führend in modernen Stahlbaulösungen für Industrie, Logistik und Bauwesen</p>
 </header>
 
 <nav>
@@ -141,18 +131,17 @@
   <a href="#uslugi">Usługi / Dienstleistungen</a>
   <a href="#kariera">Kariera / Karriere</a>
   <a href="#galeria">Galeria / Galerie</a>
-  <a href="#referencje">Referencje</a>
   <a href="#kontakt">Kontakt</a>
 </nav>
 
 <section id="o-nas">
   <div class="lang-pl">
     <h2>O nas</h2>
-    <p>Jesteśmy ekspertami w projektowaniu i wykonawstwie konstrukcji stalowych. Ramzes Stahl to firma z pasją do inżynierii, która dostarcza kompleksowe rozwiązania od koncepcji po realizację. Nasze projekty łączą trwałość, funkcjonalność i estetykę.</p>
+    <p>Jesteśmy zespołem specjalistów z pasją do inżynierii stalowej. Ramzes Stahl oferuje kompleksowe usługi – od projektu po montaż. Nasze konstrukcje cechuje trwałość, funkcjonalność i nowoczesna estetyka. Obsługujemy klientów w Polsce i Niemczech, dostarczając rozwiązania skrojone na miarę potrzeb inwestorów.</p>
   </div>
   <div class="lang-de" style="display:none;">
     <h2>Über uns</h2>
-    <p>Wir sind Experten für die Planung und Ausführung von Stahlkonstruktionen. Ramzes Stahl ist ein Unternehmen mit Leidenschaft für Technik und bietet umfassende Lösungen von der Konzeption bis zur Umsetzung. Unsere Projekte vereinen Haltbarkeit, Funktionalität und Ästhetik.</p>
+    <p>Wir sind ein Team von Fachleuten mit Leidenschaft für Stahlbau. Ramzes Stahl bietet umfassende Dienstleistungen – von der Planung bis zur Montage. Unsere Konstruktionen zeichnen sich durch Langlebigkeit, Funktionalität und modernes Design aus. Wir betreuen Kunden in Polen und Deutschland mit maßgeschneiderten Lösungen.</p>
   </div>
 </section>
 
@@ -160,17 +149,17 @@
   <div class="lang-pl">
     <h2>Nasze usługi</h2>
     <ul>
-      <li>Projektowanie i doradztwo techniczne</li>
-      <li>Produkcja oraz montaż konstrukcji stalowych</li>
-      <li>Generalne wykonawstwo hal przemysłowych</li>
+      <li>Kompleksowe projektowanie konstrukcji stalowych</li>
+      <li>Wykonawstwo i montaż hal przemysłowych, magazynowych i logistycznych</li>
+      <li>Modernizacje istniejących obiektów stalowych</li>
     </ul>
   </div>
   <div class="lang-de" style="display:none;">
     <h2>Unsere Dienstleistungen</h2>
     <ul>
-      <li>Technische Planung und Beratung</li>
-      <li>Fertigung und Montage von Stahlkonstruktionen</li>
-      <li>Generalunternehmer für Industriehallen</li>
+      <li>Umfassende Planung von Stahlkonstruktionen</li>
+      <li>Bau und Montage von Industrie-, Lager- und Logistikhallen</li>
+      <li>Modernisierung bestehender Stahlgebäude</li>
     </ul>
   </div>
 </section>
@@ -178,34 +167,28 @@
 <section id="kariera">
   <div class="lang-pl">
     <h2>Kariera</h2>
-    <p>Dołącz do naszej ekipy! Poszukujemy spawaczy, monterów i inżynierów gotowych realizować ambitne projekty. Oferujemy atrakcyjne wynagrodzenie i rozwój zawodowy.</p>
+    <p>Rozwijaj się razem z nami! Poszukujemy inżynierów, monterów i spawaczy. Gwarantujemy dobre warunki pracy, szkolenia oraz realną ścieżkę kariery. Wyślij CV na: <a href="mailto:ramzes-stahl@gmail.com">ramzes-stahl@gmail.com</a></p>
   </div>
   <div class="lang-de" style="display:none;">
     <h2>Karriere</h2>
-    <p>Werde Teil unseres Teams! Wir suchen Schweißer, Monteure und Ingenieure für spannende Projekte. Wir bieten attraktive Vergütung und berufliche Entwicklung.</p>
+    <p>Wachse mit uns! Wir suchen Ingenieure, Monteure und Schweißer. Wir bieten gute Arbeitsbedingungen, Schulungen und reale Karrierewege. Sende deinen Lebenslauf an: <a href="mailto:ramzes-stahl@gmail.com">ramzes-stahl@gmail.com</a></p>
   </div>
 </section>
 
 <section id="galeria">
   <div class="lang-pl">
     <h2>Galeria</h2>
-    <p>Przykładowe realizacje:</p>
+    <p>Zobacz wybrane projekty Ramzes Stahl:</p>
   </div>
   <div class="lang-de" style="display:none;">
     <h2>Galerie</h2>
-    <p>Beispielprojekte:</p>
+    <p>Sehen Sie sich ausgewählte Projekte von Ramzes Stahl an:</p>
   </div>
   <div class="gallery">
-    <img src="https://via.placeholder.com/300x200?text=Konstrukcja+1" alt="Projekt 1">
-    <img src="https://via.placeholder.com/300x200?text=Konstrukcja+2" alt="Projekt 2">
-    <img src="https://via.placeholder.com/300x200?text=Konstrukcja+3" alt="Projekt 3">
+    <img src="https://via.placeholder.com/300x200?text=Projekt+1" alt="Projekt 1">
+    <img src="https://via.placeholder.com/300x200?text=Projekt+2" alt="Projekt 2">
+    <img src="https://via.placeholder.com/300x200?text=Projekt+3" alt="Projekt 3">
   </div>
-</section>
-
-<section id="referencje">
-  <h2>Referencje</h2>
-  <blockquote>“Solidna firma – projekt hali zrealizowany terminowo i profesjonalnie.” – Klient A</blockquote>
-  <blockquote>“Wysoka jakość wykonania i świetny kontakt. Polecamy!” – Klient B</blockquote>
 </section>
 
 <section id="kontakt">
@@ -213,12 +196,6 @@
   <p>Email: <a href="mailto:ramzes-stahl@gmail.com">ramzes-stahl@gmail.com</a></p>
   <p>Telefon: +48 123 456 789</p>
   <p>Adres: ul. Przemysłowa 12, 00-000 Miasto</p>
-  <form>
-    <input type="text" placeholder="Imię / Name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea rows="5" placeholder="Wiadomość / Nachricht" required></textarea>
-    <button type="submit">Wyślij / Senden</button>
-  </form>
 </section>
 
 <footer>
