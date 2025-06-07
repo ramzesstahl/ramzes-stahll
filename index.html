@@ -6,28 +6,18 @@
   <title>Ramzes Stahl - Stahl Bau</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #f4f6f8;
+      background-color: #e9ecef;
     }
     header {
       background: linear-gradient(to right, #1f2937, #3b4252);
       color: #fff;
       padding: 2em 0;
       text-align: center;
-      position: relative;
-    }
-    header img.logo {
-      width: 80px;
-      position: absolute;
-      top: 10px;
-      left: 20px;
     }
     header h1 {
       font-size: 2.5em;
@@ -36,23 +26,18 @@
     header span {
       font-size: 1.2em;
       font-weight: 400;
-      opacity: 0.9;
+      opacity: 0.8;
     }
     nav {
       background-color: #2e3a59;
       text-align: center;
-      padding: 1em;
+      padding: 0.5em;
     }
     nav a {
       color: #fff;
-      margin: 0 10px;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      display: inline-block;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #00bcd4;
     }
     .lang-switcher {
       position: absolute;
@@ -67,38 +52,36 @@
     section {
       padding: 30px;
       max-width: 1000px;
-      margin: 20px auto;
+      margin: auto;
       background-color: #ffffff;
+      margin-top: 20px;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
-      animation: fadeIn 1s ease-in;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
     }
     .gallery img {
       width: 100%;
       max-width: 300px;
+      margin: 10px;
       border-radius: 8px;
     }
     footer {
       text-align: center;
-      padding: 2em 1em;
+      padding: 1.5em;
       background-color: #1f2937;
       color: #fff;
+      margin-top: 20px;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @media (max-width: 768px) {
-      header h1 { font-size: 1.8em; }
-      nav a { display: block; margin: 10px 0; }
-      .lang-switcher { top: 5px; right: 10px; }
-      header img.logo { width: 60px; top: 5px; left: 10px; }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 8px;
     }
   </style>
   <script>
@@ -119,11 +102,10 @@
 </div>
 
 <header>
-  <img src="https://via.placeholder.com/80x80?text=Logo" alt="Logo" class="logo">
   <h1>Ramzes Stahl</h1>
   <span>Stahl Bau</span>
-  <p class="lang-pl">Lider nowoczesnych rozwiązań stalowych dla przemysłu, logistyki i budownictwa</p>
-  <p class="lang-de" style="display:none;">Führend in modernen Stahlbaulösungen für Industrie, Logistik und Bauwesen</p>
+  <p class="lang-pl">Nowoczesne rozwiązania stalowe dla przemysłu i budownictwa</p>
+  <p class="lang-de" style="display:none;">Moderne Stahlbau-Lösungen für Industrie und Bauwesen</p>
 </header>
 
 <nav>
@@ -137,11 +119,15 @@
 <section id="o-nas">
   <div class="lang-pl">
     <h2>O nas</h2>
-    <p>Jesteśmy zespołem specjalistów z pasją do inżynierii stalowej. Ramzes Stahl oferuje kompleksowe usługi – od projektu po montaż. Nasze konstrukcje cechuje trwałość, funkcjonalność i nowoczesna estetyka. Obsługujemy klientów w Polsce i Niemczech, dostarczając rozwiązania skrojone na miarę potrzeb inwestorów.</p>
+    <p>Ramzes Stahl, firma zarejestrowana w Gdańsku liczy na dzień dzisiejszy kilkunastu doświadczonych i sprawdzonych monterów konstrukcji stalowych, ślusarzy i mechaników przemysłowych. Nasz zespół zrealizował wiele sukcesywnie zakończonych projektów w ostatnich 5 latach na terenie całej Europy.</p>
+    <p>Doświadczenie zdobywaliśmy przy pracach ślusarskich, remontach i demontażu budynków przemysłowych takich jak elektrownie czy papiernie oraz przy montażu konstrukcji stalowych hal produkcyjnych – ostatnie zlecenia realizowaliśmy w fabrykach Mercedes w Stuttgarcie oraz Airbus w Hamburgu.</p>
+    <p>W ostatnim czasie również braliśmy udział w projektach związanych z montażem linii produkcyjnych w Niemczech, Austrii, Włoszech i Czechach. Każdy z naszych pracowników posiada odpowiednie kwalifikacje oraz jest w doskonałej formie fizycznej.</p>
   </div>
   <div class="lang-de" style="display:none;">
     <h2>Über uns</h2>
-    <p>Wir sind ein Team von Fachleuten mit Leidenschaft für Stahlbau. Ramzes Stahl bietet umfassende Dienstleistungen – von der Planung bis zur Montage. Unsere Konstruktionen zeichnen sich durch Langlebigkeit, Funktionalität und modernes Design aus. Wir betreuen Kunden in Polen und Deutschland mit maßgeschneiderten Lösungen.</p>
+    <p>Ramzes Stahl, ein in Danzig registriertes Unternehmen, beschäftigt derzeit ein Dutzend erfahrener und bewährter Stahlbaumonteure, Schlosser und Industriemechaniker. Unser Team hat in den letzten 5 Jahren zahlreiche Projekte erfolgreich abgeschlossen – europaweit.</p>
+    <p>Unsere Erfahrung umfasst Schlosserarbeiten, Sanierungen und Demontagen von Industrieanlagen wie Kraftwerken oder Papierfabriken sowie den Aufbau von Stahlkonstruktionen für Produktionshallen – zuletzt in Mercedes-Werken in Stuttgart und Airbus in Hamburg.</p>
+    <p>Zuletzt waren wir an Projekten zum mechanischen Aufbau und zur Montage von Produktionslinien in Deutschland, Österreich, Italien und Tschechien beteiligt. Jeder unserer Mitarbeiter ist in ausgezeichneter körperlicher Verfassung und entsprechend qualifiziert.</p>
   </div>
 </section>
 
@@ -149,17 +135,17 @@
   <div class="lang-pl">
     <h2>Nasze usługi</h2>
     <ul>
-      <li>Kompleksowe projektowanie konstrukcji stalowych</li>
-      <li>Wykonawstwo i montaż hal przemysłowych, magazynowych i logistycznych</li>
-      <li>Modernizacje istniejących obiektów stalowych</li>
+      <li>Projektowanie i doradztwo techniczne</li>
+      <li>Produkcja oraz montaż konstrukcji stalowych</li>
+      <li>Generalne wykonawstwo hal przemysłowych</li>
     </ul>
   </div>
   <div class="lang-de" style="display:none;">
     <h2>Unsere Dienstleistungen</h2>
     <ul>
-      <li>Umfassende Planung von Stahlkonstruktionen</li>
-      <li>Bau und Montage von Industrie-, Lager- und Logistikhallen</li>
-      <li>Modernisierung bestehender Stahlgebäude</li>
+      <li>Technische Planung und Beratung</li>
+      <li>Fertigung und Montage von Stahlkonstruktionen</li>
+      <li>Generalunternehmer für Industriehallen</li>
     </ul>
   </div>
 </section>
@@ -167,35 +153,41 @@
 <section id="kariera">
   <div class="lang-pl">
     <h2>Kariera</h2>
-    <p>Rozwijaj się razem z nami! Poszukujemy inżynierów, monterów i spawaczy. Gwarantujemy dobre warunki pracy, szkolenia oraz realną ścieżkę kariery. Wyślij CV na: <a href="mailto:ramzes-stahl@gmail.com">ramzes-stahl@gmail.com</a></p>
+    <p>Szukasz pracy w stabilnej i nowoczesnej firmie? Dołącz do zespołu Ramzes Stahl! Oferujemy atrakcyjne warunki, możliwość rozwoju i pracę przy ciekawych projektach.</p>
   </div>
   <div class="lang-de" style="display:none;">
     <h2>Karriere</h2>
-    <p>Wachse mit uns! Wir suchen Ingenieure, Monteure und Schweißer. Wir bieten gute Arbeitsbedingungen, Schulungen und reale Karrierewege. Sende deinen Lebenslauf an: <a href="mailto:ramzes-stahl@gmail.com">ramzes-stahl@gmail.com</a></p>
+    <p>Du suchst einen Job in einem stabilen und modernen Unternehmen? Werde Teil des Ramzes Stahl Teams! Wir bieten attraktive Bedingungen, Entwicklungsmöglichkeiten und spannende Projekte.</p>
   </div>
 </section>
 
 <section id="galeria">
   <div class="lang-pl">
     <h2>Galeria</h2>
-    <p>Zobacz wybrane projekty Ramzes Stahl:</p>
+    <p>Przykładowe realizacje:</p>
   </div>
   <div class="lang-de" style="display:none;">
     <h2>Galerie</h2>
-    <p>Sehen Sie sich ausgewählte Projekte von Ramzes Stahl an:</p>
+    <p>Beispielprojekte:</p>
   </div>
   <div class="gallery">
-    <img src="https://via.placeholder.com/300x200?text=Projekt+1" alt="Projekt 1">
-    <img src="https://via.placeholder.com/300x200?text=Projekt+2" alt="Projekt 2">
-    <img src="https://via.placeholder.com/300x200?text=Projekt+3" alt="Projekt 3">
+    <img src="https://via.placeholder.com/300x200?text=Konstrukcja+1" alt="Projekt 1">
+    <img src="https://via.placeholder.com/300x200?text=Konstrukcja+2" alt="Projekt 2">
+    <img src="https://via.placeholder.com/300x200?text=Konstrukcja+3" alt="Projekt 3">
   </div>
+</section>
+
+<section id="mapa">
+  <h2>Nasze działania w Europie</h2>
+  <p class="lang-pl">Nasze projekty realizowaliśmy w Niemczech, Austrii, Włoszech oraz Czechach.</p>
+  <p class="lang-de" style="display:none;">Unsere Projekte wurden in Deutschland, Österreich, Italien und Tschechien durchgeführt.</p>
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1UwZVRDfS_So6M1HYIJr4Aeqos7qWN9o&ehbc=2E312F"></iframe>
 </section>
 
 <section id="kontakt">
   <h2>Kontakt</h2>
   <p>Email: <a href="mailto:ramzes-stahl@gmail.com">ramzes-stahl@gmail.com</a></p>
-  <p>Telefon: +48 123 456 789</p>
-  <p>Adres: ul. Przemysłowa 12, 00-000 Miasto</p>
+  <p>Telefon: +48 790 222 671</p>
 </section>
 
 <footer>
